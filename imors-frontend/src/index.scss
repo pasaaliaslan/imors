@@ -1,0 +1,19 @@
+@import "../public/fonts/fonts";
+
+body {
+    font-family: "Myanmar Khyay", "Courier New", Courier, monospace;
+    font-size: 1rem;
+    background-color: #111111;
+    color: #fafafa;
+}
+
+button {
+    &.small {
+    }
+
+    &.medium {
+    }
+
+    &.large {
+    }
+}
