@@ -1,9 +1,29 @@
-from django.http import HttpResponse
+from django.http import (
+    HttpRequest,
+    HttpResponse,
+    HttpResponseBadRequest,
+    HttpResponseServerError,
+)
 from django.views import View
+
+from video.models import OriginalAudio
 
 
 class GenerateVideoView(View):
-    def get(self, request):
-        a = 12
-        print(a)
-        return HttpResponse("Hello madafaka")
+    def post(self, request: HttpRequest):
+        user = request.user
+        audio_file = request.FILES.get("audio", None)
+
+        if audio_file is None:
+            return HttpResponseBadRequest("Audio file is not provided.")
+
+        try:
+            OriginalAudio.upload(audio_file, user)
+
+        except ValueError as err:
+            return HttpResponseBadRequest(err)
+
+        except Exception as e:
+            return HttpResponseServerError(e)
+
+        return HttpResponse()
