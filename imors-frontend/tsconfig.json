@@ -1,12 +1,13 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "allowJs": true,
-      "jsx": "react",
-      "moduleResolution": "node",
-      "outDir": "./dist",
-      "strict": true,
-      "esModuleInterop": true
-    },
-    "include": ["src/**/*"]
-  }
+  "compilerOptions": {
+    "target": "ES6",
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "./typings"]
+  },
+  "include": ["src/**/*", "typings"]
+}
