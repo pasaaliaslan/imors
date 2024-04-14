@@ -1,13 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "allowJs": true,
-    "jsx": "react",
-    "moduleResolution": "Node",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "typeRoots": ["./node_modules/@types", "./typings"]
-  },
-  "include": ["src/**/*", "typings"]
+    "compilerOptions": {
+        "target": "ES6",
+        "allowJs": true,
+        "jsx": "react",
+        "moduleResolution": "Node",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "typeRoots": ["./node_modules/@types", "./typings"]
+    },
+    "include": ["src/**/*", "typings"]
 }
