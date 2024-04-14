@@ -1,0 +1,15 @@
+@import "./dark.scss";
+@import "./light.scss";
+
+/*
+    To setup a new theme.
+
+    1) Create a scss file for it in this directory.
+    2) Introduce the theme in ThemeContext.tsx. Make sure to have consistent css class name for the theme
+    3) Define the following variables for the theme.
+
+    --background-color: ...;
+    --text-color: ...;
+    --button-bg-color: ...;
+    --button-text-color: ...;
+*/
