@@ -1,8 +1,11 @@
-@import "./assets/fonts/fonts.scss";
+@import "./themes/themes.scss";
+
+* {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+}
 
 body {
-    font-family: "Myanmar Khyay", "Courier New", Courier, monospace;
-    font-size: 1rem;
-    background-color: #111111;
-    color: #fafafa;
+    background-color: var(--background-color);
+    color: var(--color);
 }
