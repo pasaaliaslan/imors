@@ -1,0 +1,51 @@
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+
+    /* Size */
+    &.small {
+        width: 4rem;
+        height: 2rem;
+        font-size: 0.75rem;
+    }
+
+    &.medium {
+        width: 6rem;
+        height: 3rem;
+    }
+
+    &.large {
+        width: 8rem;
+        height: 4rem;
+        font-size: 1.25rem;
+    }
+
+    /* Variant */
+    &.primary {
+        background-color: #2e9800;
+        color: white;
+    }
+
+    &.secondary {
+        background-color: #1e6400;
+        color: white;
+    }
+
+    &.link {
+        background: none;
+        text-decoration: underline;
+        color: #012bff;
+    }
+
+    &.disabled {
+        background-color: #bbbbbb;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    &:hover:not(.disabled) {
+        opacity: 0.8;
+    }
+}
